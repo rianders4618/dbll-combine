@@ -21,7 +21,7 @@ const DRILLS = {
   exitvelo:  { key: "exitvelo",  label: "Exit Velocity",      lowerBetter: false, suffix: " mph", decimals: 1 }
 };
 const DRILL_ORDER = ["twentyyd", "medball", "shuttle", "pitchvelo", "exitvelo"];
-const DEFAULT_AGE_GROUPS = ["Farm", "Minors", "Majors"];
+const DEFAULT_AGE_GROUPS = ["Farm", "Minors", "Majors", "Juniors"];
 function getAgeGroups() {
   const set = new Set(DEFAULT_AGE_GROUPS);
   state.athletes.forEach(a => { if (a.ageGroup) set.add(a.ageGroup); });
